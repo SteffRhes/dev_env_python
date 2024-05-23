@@ -1,3 +1,4 @@
 #!/bin/bash
-docker build -t dev_env_python .
+
+podman build -t dev_env_python .
 

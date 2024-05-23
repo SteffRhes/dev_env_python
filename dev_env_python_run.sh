@@ -7,7 +7,7 @@ if [ ! -e "./.dev_history" ]; then
 fi
 
 
-docker run \
+podman run \
   -v ./.dev_history/bash_history:/home/docker_user/.bash_history \
   -v ./.dev_history/history.sqlite:/home/docker_user/.ipython/profile_default/history.sqlite \
   -v "$(pwd)":/app \
