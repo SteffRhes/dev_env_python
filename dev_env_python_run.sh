@@ -7,8 +7,8 @@ if [ ! -e "./.dev_history" ]; then
 fi
 
 podman run \
-  -v ./.dev_history/bash_history:/root/.bash_history:z \
-  -v ./.dev_history/history.sqlite:/root/.ipython/profile_default/history.sqlite:z \
+  -v ./.dev_history/bash_history:/root/.bash_history:rw \
+  -v ./.dev_history/history.sqlite:/root/.ipython/profile_default/history.sqlite:rw \
   -v "$(pwd)":/mount \
   -w /mount \
   -it --rm dev_env_python bash
