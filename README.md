@@ -40,7 +40,6 @@ dev_env_python() {
     -v ./.dev_history/bash_history:/root/.bash_history:z \
     -v ./.dev_history/history.sqlite:/root/.ipython/profile_default/history.sqlite:z \
     -v "$(pwd)":/mount \
-    -w /mount \
     -it --rm dev_env_python bash
 }
 ```
