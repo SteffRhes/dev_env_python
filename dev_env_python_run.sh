@@ -2,8 +2,8 @@
 
 if [ ! -e "./.dev_history" ]; then
   mkdir .dev_history
-  touch ./.dev_history/bash_history
-  touch ./.dev_history/history.sqlite
+  touch .dev_history/bash_history
+  touch .dev_history/history.sqlite
 fi
 
 podman run \
